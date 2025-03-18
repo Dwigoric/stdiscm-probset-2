@@ -67,4 +67,6 @@ int main() {
             throw std::invalid_argument("Missing configuration key: " + key);
         }
     }
+
+    return 0;
 }
