@@ -3,9 +3,9 @@
 
 struct Instance {
     unsigned short id;
-    unsigned short totalTimeRun = 0;
-    unsigned short partiesServed = 0;
-    bool isActive = false;
+    mutable unsigned short totalTimeRun = 0;
+    mutable unsigned short partiesServed = 0;
+    mutable bool isActive = false;
 
     explicit Instance(const unsigned short id) : id(id) {
     }
