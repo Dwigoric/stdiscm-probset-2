@@ -146,5 +146,15 @@ int main() {
         }
     }
 
+    // Summary of all instances
+    std::cout << "\n========================================\n";
+    std::cout << "All instances finished.\n";
+    std::cout << "----------------------------------------\n";
+    for (const auto &instance: instances) {
+        std::cout << "Instance " << instance.id
+                << " - Total time run: " << instance.totalTimeRun
+                << ", Parties served: " << instance.partiesServed << "\n";
+    }
+
     return 0;
 }
