@@ -150,6 +150,10 @@ int main() {
     std::cout << "\n========================================\n";
     std::cout << "All instances finished.\n";
     std::cout << "----------------------------------------\n";
+    std::cout << "Remaining tanks: " << t << "\n";
+    std::cout << "Remaining healers: " << h << "\n";
+    std::cout << "Remaining DPS: " << d << "\n";
+    std::cout << "----------------------------------------\n";
     for (const auto &instance: instances) {
         std::cout << "Instance " << instance.id
                 << " - Total time run: " << instance.totalTimeRun
